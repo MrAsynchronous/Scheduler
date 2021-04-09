@@ -1,7 +1,5 @@
-local Scheduler = {}
-Scheduler.__index = Scheduler
-
---//Api
+-- Scheduler
+-- MrAsync
 
 --//Services
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -13,6 +11,8 @@ local MaidClass = require(ReplicatedStorage.Modules:WaitForChild("Maid"))
 --//Locals
 local _Maid = MaidClass.new()
 
+local Scheduler = {}
+Scheduler.__index = Scheduler
 
 --Constructor
 function Scheduler.new(targetTime)
